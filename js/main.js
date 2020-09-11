@@ -1,7 +1,7 @@
 function getPassword() {
   var chars = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789";
   var password = "";
-  var passwordLength = 16;
+  var passwordLength = documnet.getElementById('characters').value;
 
   for (var i=0; i<passwordLength; i++){
     var randomNumber = Math.floor(Math.random() * chars.length);
